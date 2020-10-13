@@ -1,0 +1,196 @@
+Response received from client:
+{"paymentMethod":{"type":"giropay"}}
+/payments request:
+class PaymentsRequest {
+    additionalData: null
+    allowedPaymentMethods: null
+    amount: class Amount {
+        value: 1000
+        currency: EUR
+    }
+    billingAddress: null
+    captureDelayHours: null
+    channel: Web
+    company: null
+    countryCode: DE
+    dateOfBirth: null
+    dccQuote: null
+    deliveryAddress: null
+    deliveryDate: null
+    enableOneClick: null
+    enablePayOut: null
+    enableRecurring: null
+    entityType: null
+    fraudOffset: null
+    installments: null
+    lineItems: null
+    mcc: null
+    merchantAccount: AdyenRecruitmentCOM
+    merchantOrderReference: null
+    metadata: null
+    browserInfo: null
+    orderReference: null
+    paymentMethod: DefaultPaymentMethodDetails{type='giropay', number='null', expiryMonth='null', expiryYear='null', holderName='null', cvc='null', installmentConfigurationKey='null', personalDetails=null, encryptedCardNumber='null', encryptedExpiryMonth='null', encryptedExpiryYear='null', encryptedSecurityCode='null', recurringDetailReference='null', storedPaymentMethodId='null', storeDetails=null, idealIssuer='null', issuer='null', sepaOwnerName='null', sepaIbanNumber='null', applepayToken='null', googlepayToken='null', separateDeliveryAddress='null', securityCode='null', brand='null', networkPaymentReference='null'}
+    reference: MdZiaurRahman_checkoutChallenge
+    recurringProcessingModel: null
+      returnUrl: http://localhost:8080/api/handleShopperRedirect
+    sessionValidity: null
+    shopperEmail: null
+    shopperIP: null
+    shopperInteraction: null
+    shopperLocale: null
+    shopperName: null
+    shopperReference: Java Checkout Shopper
+    shopperStatement: null
+    socialSecurityNumber: null
+    deviceFingerprint: null
+    applicationInfo: ApplicationInfo{adyenLibrary=class CommonField {
+        name: adyen-java-api-library
+        version: 8.2.0
+    }, adyenPaymentSource=null, merchantApplication=null, merchantDevice=null, externalPlatform=null, shopperInteractionDevice=null}
+    telephoneNumber: null
+    accountInfo: null
+    trustedShopper: null
+    splits: null
+    merchantRiskIndicator: null
+    threeDS2RequestData: null
+    trustedShopper: null
+    blockedPaymentMethods: null
+    configId: null
+    origin: null
+    metadata: null
+    mpiData: null
+    redirectFromIssuerMethod: null
+    redirectToIssuerMethod: null
+    order: null
+    storePaymentMethod: null
+    enableRealTimeUpdate: null
+    threeDSAuthenticationOnly: null
+    selectedBrand: null
+    store: null
+    riskData: null
+}
+/payments response:
+{"resultCode":"RedirectShopper","action":{"method":"GET","paymentData":"Ab02b4c0!BQABAgCxkjtSWJTYD+1FL//+dKTOV9YTFAUhwZXiOVJrzAjj3vAlDBcWMbSp1PjYiSYvbQT2ponZJvsU32Muo1hum5ntGVlk98OXvQ4m8e1+sL9eR2HyU2diejixuMnz7XF5FaTWVabYT6XIctQbyplGA/vE3p6JwWJVntmMspYlE/Qqalvab7qByFfoaneStuH6ZP5reXV+xF7kQS6ROLs9JlxGD9ZEh1mqmrvs4s2Ct5rYfNMPeEx3zAHLpgl8OeIV2GY8UEwnNlx4D6TJU46ohF0VsgIAIa2UxXdpG6a+oFX+slh2lyE17F1qeesWyT0tEVN72vh4CTTX/BhjF2+RTiUuvQvmwbPQfCYygaMjpD5bSBEPupmcYQb+0Uow8HqR55oMAFt6RZ/XX9TpAoIxHvzBlDiZ04+iRJmeB2HgZv5Y0uosp8ohdkv2dTKtqHE/BNNZcZXtGfdh1hniOBdGD01QuhoYPFB2Byda4dlp2TWsD3JJ81KlNfp8spJ3NMGTGcV5uoD4c3vWA+ZWZ8cKuRvSh6L5cqJgaWeXPKRHR0DbJfmdH14z7CnfZOltms38TMRdUQwieAllomD0L88xwluIFOPvzqkN2nsb5TEawXeNdTkuE1IPQgfy0uwnHy4g3folQ93IDc8hRdoi2Yw9ulQ0Nhuq9GqLQs9JOyIc2LfX4RB06/bmUStZ1+q54uMpDeuKAEp7ImtleSI6IkFGMEFBQTEwM0NBNTM3RUFFRDg3QzI0REQ1MzkwOUI4MEE3OEE5MjNFMzgyM0Q2OERBQ0M5NEI5RkY4MzA1REMifW9cIJIepccsVnW2pj9oJjBHPDK+L/zFWHsVwvl8rk0Aje5ReEqsQMC1+zF0NI+Lzbh4sMenOjapro3v6PHlZXR9WohBz9I2QNAUUgTZ9GkQ9AxkTSWoZkkSZ6T+tprFBsBeXBjl0a0taN1Htu951C+U/72CbPiqUxz5zjdxLlpLOkxEVHRmNBOK9u6cXOm8nsMG2A8bzhDH6jPdD0Cr+zTnBub7X7D6pm9SHqCWgRS34dqWmhASV0aHKMKAji0HC3pfr9HEJ4GBtpm9LCk6Y5wY/eY/+3HqJR4glUtggoR8ZCbCIi7vEPyiK+zU3MGhduD3RfuOtzPhz7oKRgj+ozoMuCKUwrL5I3NLDOxUqpt4qH19balTXYs6OD1Dxr+cKgezZW1ADFbYefgmuy56F7fINPcvGwStqbAgOftc/OHz0RYnlr8OmOC6pCftXdbL5OtBRro+npq2Y64QhPwMiIaxg+YGL56EIO47nY1T8vaIRp1IkjKEHL+LvXpr9F65u579OvZCYcksYKTvgT0Aiv1WVrC+1TorKfFMrU9LSb5Hn3knVPUZFsesR97oPDhoKEaeCYO6oyqRa1tyYRjmm1D2jhFeaZidsJq5+7oBea3KLk+pp64fT6+6b+1JQGxXXzoePqT/FEEMJamOReBbXzr2dok06lk4znihZ4b2nY0FStzgZM8H3FH8HOqslUzuSzudfu4i4F5Px1cQNTI6/Wl790O0Y4i/keQlArO6PQ3cMzW6VxfNLpM+bk6ZD0K8el33X7QLwqPWu8SkMPeBYJswv2uGF7p8hnNrbJ9T0T7hTXq6osrRe9ax+yEziLAQf4+7JrGx/YnC8hzEFn/QWoskHFcc+4lCYPiXmLnqAB9yC+gHzTkB/wP8K3W06loH96zew14GqVH0Sn0yZhjAUSdh8AqXdqWkFkR+qoFhTH6TQVwRMOj0o/lVNWvoQxre41UUIyWyGSOgkcglfG+6XQKQI55rBMoakihM9s3Ku0LPgAxpkRwCcuZ9OoNCiOZyYfM+cGT5RVCHdzjtaR9YJaJe+gzzmtkOFA3gbNZYI104HWJOWL7IZ+bnU0j2C+Wvg4E\u003d","paymentMethodType":"giropay","resendInterval":0,"resendMaxAttempts":0,"type":"redirect","url":"https://test.adyen.com/hpp/checkout.shtml?u\u003dskipDetails\u0026p\u003deJxtkm9TozAQxj9NeeOUCVAwvuBFJ0Wv1tobKp71jRPDCrGQcEngxE9-AbF3c*cMw5-dJ*xvn13aNBVn1HAp1uJFuhV-VlT1t7SGmOY9iPkr7eicNnw*pRz69ZF7UNqGYuz6LnJsSORE5hAXXMmG9g6TrTCqH2OrxGGtUiDYx3eSpU4NipVUmCUblfFyqJ4CUy03NQhDdtuTZi0MFGpEcE3fQEy*JWSzy*6erpLbJF2TL5XdRBj6p3QKLzBgQLzNHzltVUrLmoonVgI7ytaQklYViAL*OmFaJVbU0BhjL0K*dx7hAC1QtDlp9ryIdxpddBlJbxLWvR1y9ivzVj-eBYqi*pW*rYqrnbyua1nvt3gWrBzr0NDksh579xBCjoLBIy4KIq1xlJk4TUiWpuvbK5vTWXoTl8Y0ehYsZ-6lvT6hdSmbBtTcgDbuOESXyfp-gY1oUB1noO3r9w*CtbBaWzSFnFsCYzOdZ2*VZLSaNFswpcxnweU-M7ONfDG1mR*p0TRLbBUD88wPB*hwwA6nf5dSmzGOEUZj2C7d*LQV8gr2H9CfXI4GPUzznlY856aPfeSjuYfmCN951tIlOrc3Dz06U7fDJgwuDhuQ2B4HdvhM-tmDa7vuZ2Qy6mwq6ugjF*OmNu2z2-ku9rzwAuPgIsSLIFyE7vK*6Bfvx2O4Sx9IFv3E4jWrblaqDNaa7EjZHLYPz5tNftDoN8lcN*Q"}}
+/paymentMethods context:
+class PaymentMethodsRequest {
+    additionalData: null
+    allowedPaymentMethods: null
+    amount: class Amount {
+        value: 1000
+        currency: EUR
+    }
+    blockedPaymentMethods: null
+    channel: Web
+    countryCode: null
+    enableRealTimeUpdate: null
+    merchantAccount: AdyenRecruitmentCOM
+    shopperLocale: null
+    shopperReference: null
+    threeDSAuthenticationOnly: null
+    store: null
+}
+/paymentMethods response:
+{"paymentMethods":[{"name":"AliPay","supportsRecurring":true,"type":"alipay"},{"brands":["amex","bcmc","diners","discover","maestro","mc","visa"],"details":[{"key":"encryptedCardNumber","type":"cardToken"},{"key":"encryptedSecurityCode","type":"cardToken"},{"key":"encryptedExpiryMonth","type":"cardToken"},{"key":"encryptedExpiryYear","type":"cardToken"},{"key":"holderName","optional":true,"type":"text"}],"name":"Credit Card","type":"scheme"},{"details":[{"key":"encryptedCardNumber","type":"cardToken"},{"key":"encryptedExpiryMonth","type":"cardToken"},{"key":"encryptedExpiryYear","type":"cardToken"},{"key":"holderName","optional":true,"type":"text"}],"name":"Bancontact card","supportsRecurring":true,"type":"bcmc"},{"name":"Online bank transfer.","supportsRecurring":true,"type":"directEbanking"},{"name":"Finnish E-Banking","supportsRecurring":true,"type":"ebanking_FI"},{"details":[{"key":"bic","optional":true,"type":"text"}],"name":"GiroPay","supportsRecurring":true,"type":"giropay"},{"details":[{"items":[{"id":"1121","name":"Test Issuer"},{"id":"1154","name":"Test Issuer 5"},{"id":"1153","name":"Test Issuer 4"},{"id":"1152","name":"Test Issuer 3"},{"id":"1151","name":"Test Issuer 2"},{"id":"1162","name":"Test Issuer Cancelled"},{"id":"1161","name":"Test Issuer Pending"},{"id":"1160","name":"Test Issuer Refused"},{"id":"1159","name":"Test Issuer 10"},{"id":"1158","name":"Test Issuer 9"},{"id":"1157","name":"Test Issuer 8"},{"id":"1156","name":"Test Issuer 7"},{"id":"1155","name":"Test Issuer 6"}],"key":"issuer","type":"select"}],"name":"iDEAL","supportsRecurring":true,"type":"ideal"},{"details":[{"key":"sepa.ownerName","type":"text"},{"key":"sepa.ibanNumber","type":"text"}],"name":"SEPA Direct Debit","supportsRecurring":true,"type":"sepadirectdebit"},{"name":"WeChat Pay","supportsRecurring":true,"type":"wechatpayQR"},{"name":"WeChat Pay","supportsRecurring":true,"type":"wechatpayWeb"}],"groups":[{"name":"Credit Card","types":["amex","bcmc","diners","discover","maestro","mc","visa"]},{"name":"WeChatPay","types":["wechatpayQR","wechatpayWeb"]},{"name":"AliPay","types":["alipay"]}]}
+Response received from client:
+{"paymentMethod":{"type":"directEbanking"}}
+/payments request:
+class PaymentsRequest {
+    additionalData: null
+    allowedPaymentMethods: null
+    amount: class Amount {
+        value: 1000
+        currency: EUR
+    }
+    billingAddress: null
+    captureDelayHours: null
+    channel: Web
+    company: null
+    countryCode: DE
+    dateOfBirth: null
+    dccQuote: null
+    deliveryAddress: null
+    deliveryDate: null
+    enableOneClick: null
+    enablePayOut: null
+    enableRecurring: null
+    entityType: null
+    fraudOffset: null
+    installments: null
+    lineItems: null
+    mcc: null
+    merchantAccount: AdyenRecruitmentCOM
+    merchantOrderReference: null
+    metadata: null
+    browserInfo: null
+    orderReference: null
+    paymentMethod: DefaultPaymentMethodDetails{type='directEbanking', number='null', expiryMonth='null', expiryYear='null', holderName='null', cvc='null', installmentConfigurationKey='null', personalDetails=null, encryptedCardNumber='null', encryptedExpiryMonth='null', encryptedExpiryYear='null', encryptedSecurityCode='null', recurringDetailReference='null', storedPaymentMethodId='null', storeDetails=null, idealIssuer='null', issuer='null', sepaOwnerName='null', sepaIbanNumber='null', applepayToken='null', googlepayToken='null', separateDeliveryAddress='null', securityCode='null', brand='null', networkPaymentReference='null'}
+    reference: MdZiaurRahman_checkoutChallenge
+    recurringProcessingModel: null
+      returnUrl: http://localhost:8080/api/handleShopperRedirect
+    sessionValidity: null
+    shopperEmail: null
+    shopperIP: null
+    shopperInteraction: null
+    shopperLocale: null
+    shopperName: null
+    shopperReference: Java Checkout Shopper
+    shopperStatement: null
+    socialSecurityNumber: null
+    deviceFingerprint: null
+    applicationInfo: ApplicationInfo{adyenLibrary=class CommonField {
+        name: adyen-java-api-library
+        version: 8.2.0
+    }, adyenPaymentSource=null, merchantApplication=null, merchantDevice=null, externalPlatform=null, shopperInteractionDevice=null}
+    telephoneNumber: null
+    accountInfo: null
+    trustedShopper: null
+    splits: null
+    merchantRiskIndicator: null
+    threeDS2RequestData: null
+    trustedShopper: null
+    blockedPaymentMethods: null
+    configId: null
+    origin: null
+    metadata: null
+    mpiData: null
+    redirectFromIssuerMethod: null
+    redirectToIssuerMethod: null
+    order: null
+    storePaymentMethod: null
+    enableRealTimeUpdate: null
+    threeDSAuthenticationOnly: null
+    selectedBrand: null
+    store: null
+    riskData: null
+}
+/payments response:
+{"resultCode":"RedirectShopper","action":{"method":"GET","paymentData":"Ab02b4c0!BQABAgBeWmKorIK1/a46yomOKSo40KO2QxF5G6jd1HYjGO5+Ij11u95WD41cZc5lGLG+x348YQ0qQMot4vcr7njn0GEmlKw1SBYRkBZMWaCuH0winEq9UTBVtXW5aYiWRkvlyeVl3FoTRAFdy0I9DyioQrpX+cd6vEbzRUFa9vvemSOicaGOdnPhwiLTj7JcCNvgnB2XiTm2PKUv09Pea5Zc7Oa7M7swOFkjY2DnZyt1yjz5ee584YrXKiU05gOcpaBA3VGVzSkh/eZvbji/NjUwLL/rbXx7af/K16Now+PteitWqmNGIbbas4yxLJDkuKvxYYoHobC/nLtqAyljnDF8tV0gItypnx82uHQDsYqPnM0RIaMpOqTuA5KUMfhw2gnKmziQ8saPwkRmHZi7pA0BCV+qhRNvY8rVh36thl2OIsrWzlb09NBwPzw5/jx64FvercqXhxObCd52T4KxrNmx1zo/zMWVg/m7XPQq/mDaw8EgSaZMNWMBNurNXxEpPCem3dhXww9Cq60MBCFxi4iLYawyavVwHmg1PmFG6pfJeu9coi/qiDI/ky7UjQbmAhPmcsQWBMjaxFzHgP+7pwdYJQqxSgZC3x6gLpCcuqEgmAgtGr10BZGLGHw+/blbes2FpBl4owyb3QVHLDPR2RJjfIFMTnPzbwBCi4gOjOQA+7ClkhAHjnXCxBzgAox8iFJqhBY8AEp7ImtleSI6IkFGMEFBQTEwM0NBNTM3RUFFRDg3QzI0REQ1MzkwOUI4MEE3OEE5MjNFMzgyM0Q2OERBQ0M5NEI5RkY4MzA1REMifdgvwXbKAVjRaDq9yrX27wYLt6zD6MIOiWnRGIOJEHpbvU1Q8zgBIvKLeIgSoC4rMTisRelmBnSBMPn5F9RzSpcRKMJ5CBuBUc4odafGNpfMeANPrLM+U25zC89nz5TkGG0b8PLhQZKZRqLR53Ij1xc+w0oWgqbIRifdFegYDjA60GrPzkjLWLi1YvrU10IMSNck6yJIizoyJ5AEZEeUkjeTzdje5tnFujoS9lzWKmWGDM0jVpCs4shJmy3SV2+G5nZkdb3C/6Lqkl/U5uj1tGU8R44Klxq8jv5+1HJMM/YYyGmMNZx5kkowE7h4wjnMIp2OplA1WhPPFluBJY6WHHGTzF9tkaCP2QtZxmbDvv1dfBUAwnCOqAa9Jy8tKJUZe+urYSqL8VDt83UmxNII2Zh12MZGppkIN4yPfUjyZBaoT075P8whMnGIF7hFBI4zvGUUQlqt/Lu7VBihyD+h71mWq2WVRlPlaNGN2nHzOIaT7iPadqA5h/7lDZNCNyc2yluVD6oJvSesVCUXSt4acuSkpOxD/AM+f+JWkrAAFBvJydDClA2L8UWMCQ6uH2zmwFUeoPJYGKRhBJj9nq3lETFA608TvlVLvdyZ1XWFRCM1ELFoDo3RxjL08cmxX01+9rN7FVjQyB+SP537O+JeiE7vDlvAFCXpPv2FRqeQh7z4QPJK9T03H/N4yXxc+aHvmg6rv+25VxyPBlcgIc9lwSeyL6JCUyXiQrBYHSI/ASH/9p4rJlto0Ml0ZFEEWk15GeVRCNn07RAdcXCL23AWXwrqM8mk79gQYnxv8WlTV+kXfxkSoM2RRbFyiPNuX/e7VH9Nzh2OHquRVSjbBkHz6WsFuxK9T0jjCynWwsmFiYu7B0MYcd3Ca1QGt8ZZbyTCv7dKrdkEtoj0dvsqkkieJOExuNbmLzEtODr4F7WZBsSfo7ltQweJYxAoh5nm8KD6Htx/Ragm93ua8KpQ3O9vWe5Pnq2Fmyh1548Aiyin/zeA/Om4KjBluJMWORg74gNUj0qqCG07fi08X+6T+wM0maq15JnAlF0D363/YYRY0YCc690pkKOTAFO20K0P/KW4YXDC4w\u003d\u003d","paymentMethodType":"directEbanking","resendInterval":0,"resendMaxAttempts":0,"type":"redirect","url":"https://test.adyen.com/hpp/checkout.shtml?u\u003dskipDetails\u0026p\u003deJxtUttymzAU-BrzkjEjwNjKAw8MJg7xrcGXOnnJyOLEyAZBJcGUfn0Fxm6nzQwjxNkV2rNnSVlmjBLFCh7xz8LM2FEQ0axIDh5JGuDDM6nJkJRs2EMG*frIHoTUJQ*btokMXeJJUCTgJUwAVeGR8AvjJ4MWFVei6aBpaNBKCOD0*h3uYiMHQVPClU87pue3ImKgomIqB66C9fLOibiCk*iUmKopwQuew2C*3m0-ZuEqjKPgS2bdC3XtOxzDJ7QywFsm74xUIiZpTvgHTYFeikoFKcky4Cf464SqBJ8SRTyMrTGyrckYuyM0wc93zoadvGK9rSFdbX0LKX*Rz5bKOTCXH-f7zSsK4-33l5*vZxsafokGztQoSdM26edd7xZCyNDuaY*0dUGhjSNUeXEY7OI4Ws00JnfxwkuVKuXA8Qf2k35uomValCWIoQKpzG6WJi3y-wm6IkHUjILU229XBRHXXH1pDNf5aaS29JIVlGQ9ZwkqLZKB8-TPzHQjX0xtYI9FZ5pWrBmt5oHttqLdVrbb-zstpOrqGGHUlXX2ure*IclgcxV902VIkO009yRjCVONZyMbDS00RHhrYe0JmujFGb0bfbdtEloX2wSEusdWO9zAPzl40al-CHqjHvpLDakj3CW1rI5mbZvYstxHjJ1HF48cd*Sa-v7UjH5dLu46PgS78Q-Mz7tsMRWpE8lgHaTl2-JwnM*TN4l*AyhOOis"}}
+GET redirect handler
+POST redirect handler
+/paymentsDetails request:class PaymentsDetailsRequest {
+    details: {payload=Ab02b4c0!BQABAgA5veR6gqpKQudlXMxNdJAjtW5ajk/xSmJK+5VZV93hI8/tKxCFKY4NbblFXO2GP8x7XX2pC5+Evn0mPPohCIFzKtYl/JmPK2pqz1S0920ybj7TaCPx5bckJ4fv7EFeGIOgJqiM4bg8xV6rGRCqg3If43Pl+Shhpr6hJYc+TudFoII88OQOu1xYeQCULFRv8A9Bs33vnjgKlhGeY2HIJtIJbnR9sWzym2vDPnPgbXoLv2cxX9R/2fN6j8xk9yYXFcpdkWXivM9ld1YEr62ORUZ9QgYQulfafCxggfPCPu2x7XGdTbC7rmap1u4BasovDNbC/pqfcror9rj+JiL2GX0Hv0L9YfzXAaB8sEtopTodXPQdZVhCnKlcbSetfVpDy3Q3tjWrHAoM3Mr5/P0SqWtk/nsjp1rv03vfBHQhSCfeaMzPmjQM+jV2N75LvwWaI0DZk4jyOPWRIxuyFWNcxLPl7uRmhPQtl6pKwJN5nUwAmp7dabG10zhJOSzDcRyGhtzN1tMYxvoZfSSMeEgmKNn0mTmXnwJeQc2wB1w01cJOcMLy0PBcCJwaOqDyYS79vsfFmylduSls5KmoAASlQFWtIoPkzm7JMMetgS6hErKDeLAmzCliLeUEsXS5mvUXVluJ9Y/LuvBxH0siUxugB0MHiD0cf6PHVhXv2EJSlUhPExBbdJcaHR3ahiXyesHBr3SbAEp7ImtleSI6IkFGMEFBQTEwM0NBNTM3RUFFRDg3QzI0REQ1MzkwOUI4MEE3OEE5MjNFMzgyM0Q2OERBQ0M5NEI5RkY4MzA1REMifVevGj3OasSObe4jRhVP0UrVUglLfRWGWD0wjJz6bxgGiCTCSn1nLS7fR6qPxzXVLEQh3/1aVa4xz7sh6XKC1q3xlS0uP7KcU3umpI+8lBory2JI/l8k9z0a+dGfBcbkSYupm7eDtXIbwIgvz2NWO8sN+vhZj2lLdmm0aHedvV0lHj2zKxHqPI5og8Cjeh72A4JMhWsVdWfLCj322YMyz6dJXiSsAawot4V/xMw1al+i3HEpe4jZ7wfywPDdPSZfGm/ap9GxbDOVnduPL0Z/BZKY7+VdvikthF4zPdRzjh6T/78CGRzpXGVn53oKSHO5nGoR9zaOz9vHh2gj9cAuBQXQP8qNDx497qysQr3PLIxCEmLwT72Pz2+UFws=}
+    paymentData: Ab02b4c0!BQABAgBeWmKorIK1/a46yomOKSo40KO2QxF5G6jd1HYjGO5+Ij11u95WD41cZc5lGLG+x348YQ0qQMot4vcr7njn0GEmlKw1SBYRkBZMWaCuH0winEq9UTBVtXW5aYiWRkvlyeVl3FoTRAFdy0I9DyioQrpX+cd6vEbzRUFa9vvemSOicaGOdnPhwiLTj7JcCNvgnB2XiTm2PKUv09Pea5Zc7Oa7M7swOFkjY2DnZyt1yjz5ee584YrXKiU05gOcpaBA3VGVzSkh/eZvbji/NjUwLL/rbXx7af/K16Now+PteitWqmNGIbbas4yxLJDkuKvxYYoHobC/nLtqAyljnDF8tV0gItypnx82uHQDsYqPnM0RIaMpOqTuA5KUMfhw2gnKmziQ8saPwkRmHZi7pA0BCV+qhRNvY8rVh36thl2OIsrWzlb09NBwPzw5/jx64FvercqXhxObCd52T4KxrNmx1zo/zMWVg/m7XPQq/mDaw8EgSaZMNWMBNurNXxEpPCem3dhXww9Cq60MBCFxi4iLYawyavVwHmg1PmFG6pfJeu9coi/qiDI/ky7UjQbmAhPmcsQWBMjaxFzHgP+7pwdYJQqxSgZC3x6gLpCcuqEgmAgtGr10BZGLGHw+/blbes2FpBl4owyb3QVHLDPR2RJjfIFMTnPzbwBCi4gOjOQA+7ClkhAHjnXCxBzgAox8iFJqhBY8AEp7ImtleSI6IkFGMEFBQTEwM0NBNTM3RUFFRDg3QzI0REQ1MzkwOUI4MEE3OEE5MjNFMzgyM0Q2OERBQ0M5NEI5RkY4MzA1REMifdgvwXbKAVjRaDq9yrX27wYLt6zD6MIOiWnRGIOJEHpbvU1Q8zgBIvKLeIgSoC4rMTisRelmBnSBMPn5F9RzSpcRKMJ5CBuBUc4odafGNpfMeANPrLM+U25zC89nz5TkGG0b8PLhQZKZRqLR53Ij1xc+w0oWgqbIRifdFegYDjA60GrPzkjLWLi1YvrU10IMSNck6yJIizoyJ5AEZEeUkjeTzdje5tnFujoS9lzWKmWGDM0jVpCs4shJmy3SV2+G5nZkdb3C/6Lqkl/U5uj1tGU8R44Klxq8jv5+1HJMM/YYyGmMNZx5kkowE7h4wjnMIp2OplA1WhPPFluBJY6WHHGTzF9tkaCP2QtZxmbDvv1dfBUAwnCOqAa9Jy8tKJUZe+urYSqL8VDt83UmxNII2Zh12MZGppkIN4yPfUjyZBaoT075P8whMnGIF7hFBI4zvGUUQlqt/Lu7VBihyD+h71mWq2WVRlPlaNGN2nHzOIaT7iPadqA5h/7lDZNCNyc2yluVD6oJvSesVCUXSt4acuSkpOxD/AM+f+JWkrAAFBvJydDClA2L8UWMCQ6uH2zmwFUeoPJYGKRhBJj9nq3lETFA608TvlVLvdyZ1XWFRCM1ELFoDo3RxjL08cmxX01+9rN7FVjQyB+SP537O+JeiE7vDlvAFCXpPv2FRqeQh7z4QPJK9T03H/N4yXxc+aHvmg6rv+25VxyPBlcgIc9lwSeyL6JCUyXiQrBYHSI/ASH/9p4rJlto0Ml0ZFEEWk15GeVRCNn07RAdcXCL23AWXwrqM8mk79gQYnxv8WlTV+kXfxkSoM2RRbFyiPNuX/e7VH9Nzh2OHquRVSjbBkHz6WsFuxK9T0jjCynWwsmFiYu7B0MYcd3Ca1QGt8ZZbyTCv7dKrdkEtoj0dvsqkkieJOExuNbmLzEtODr4F7WZBsSfo7ltQweJYxAoh5nm8KD6Htx/Ragm93ua8KpQ3O9vWe5Pnq2Fmyh1548Aiyin/zeA/Om4KjBluJMWORg74gNUj0qqCG07fi08X+6T+wM0maq15JnAlF0D363/YYRY0YCc690pkKOTAFO20K0P/KW4YXDC4w==
+    threeDSAuthenticationOnly: null
+}
+paymentsDetails response:
+class PaymentsResponse {
+    additionalData: {authorisedAmountCurrency=EUR, authorisedAmountValue=1000}
+    details: null
+    fraudResult: null
+    paymentData: null
+    pspReference: 851602176854124C
+    redirect: null
+    refusalReason: null
+    refusalReasonCode: null
+    resultCode: Authorised
+    serviceError: null
+    authResponse: null
+    merchantReference: MdZiaurRahman_checkoutChallenge
+    outputDetails: null
+    authentication: null
+    threeDS2Result: null
+    action: null
+    amount: null
+    order: null
+}
